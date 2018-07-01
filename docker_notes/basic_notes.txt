@@ -1,0 +1,25 @@
+Docker course notes
+
+find existing images at registry.hub.docker.com or use the command
+
+docker search redis
+
+1) to run docker image in background 
+    docker run -d redis [by default it runs in foreground)
+
+for specific version redis:3.2
+
+2) List all the running containers
+    docker ps
+
+3) to inspect the current running image 
+    docker inspect <friendly-name|container-id>
+
+4) to display messages the container has written to standard error/stdout
+    docker logs <friendly-name|container-id>
+
+5) expose a port from docker container to access the application
+    (redisHostPort is the name of application)
+    docker run -d --name redisHostPort -p 127.0.0.1:<hostport>:<container_port>
+
+6) 
