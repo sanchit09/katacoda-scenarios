@@ -22,4 +22,4 @@ for specific version redis:3.2
     (redisHostPort is the name of application)
     docker run -d --name redisHostPort -p 127.0.0.1:<hostport>:<container_port>
 
-6) 
+6) Data Containers are a great way of managing configuration data which can be used by other containers. The volumes-from property allows us to gain access to other containers volumes which we can utilise for debugging or backup purposes.
